@@ -9,125 +9,49 @@
     body{
       font-family:'Georgia',serif;
       background:linear-gradient(135deg,#ffeaa7,#fdcb6e,#f39c12,#e17055);
-      min-height:100vh;
-      overflow-x:hidden;
-      position:relative;
+      min-height:100vh;overflow-x:hidden;position:relative
     }
     .container{max-width:100vw;margin:0 auto;padding:20px;text-align:center;position:relative}
     .title{
-      font-size:2.8rem;
-      color:#2d3436;
-      margin-bottom:20px;
-      text-shadow:3px 3px 6px rgba(0,0,0,.2);
-      animation:fadeInDown 2s ease-out;
-      background:linear-gradient(45deg,#d63031,#e84393,#fdcb6e);
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
-      background-clip:text;
+      font-size:2.8rem;color:#2d3436;margin-bottom:20px;text-shadow:3px 3px 6px rgba(0,0,0,.2);
+      animation:fadeInDown 2s ease-out;background:linear-gradient(45deg,#d63031,#e84393,#fdcb6e);
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text
     }
-    .subtitle{
-      font-size:1.3rem;
-      color:#2d3436;
-      margin-bottom:20px;
-      animation:fadeInUp 2s ease-out .5s both;
-      font-style:italic;
-    }
-    .date-special{
-      font-size:1.5rem;
-      color:#d63031;
-      font-weight:700;
-      margin-bottom:40px;
-      animation:pulse 2s infinite;
-      text-shadow:2px 2px 4px rgba(0,0,0,.1);
-    }
+    .subtitle{font-size:1.3rem;color:#2d3436;margin-bottom:20px;animation:fadeInUp 2s ease-out .5s both;font-style:italic}
+    .date-special{font-size:1.5rem;color:#d63031;font-weight:700;margin-bottom:40px;animation:pulse 2s infinite;text-shadow:2px 2px 4px rgba(0,0,0,.1)}
     .flowers-container{position:relative;margin:40px 0;animation:fadeIn 3s ease-out 1s both}
     .flower{font-size:3rem;display:inline-block;margin:10px;animation:bounce 2s infinite;filter:drop-shadow(3px 3px 6px rgba(0,0,0,.2))}
-    .flower:nth-child(2){animation-delay:.2s}
-    .flower:nth-child(3){animation-delay:.4s}
-    .flower:nth-child(4){animation-delay:.6s}
-    .flower:nth-child(5){animation-delay:.8s}
+    .flower:nth-child(2){animation-delay:.2s}.flower:nth-child(3){animation-delay:.4s}.flower:nth-child(4){animation-delay:.6s}.flower:nth-child(5){animation-delay:.8s}
     .section{margin:60px 0;animation:fadeInUp 2s ease-out 1.5s both}
     .section-title{font-size:2.2rem;color:#2d3436;margin-bottom:30px;text-shadow:2px 2px 4px rgba(0,0,0,.1)}
-    .how-i-see-you{
-      background:rgba(255,255,255,.9);
-      padding:40px;
-      border-radius:25px;
-      margin:40px auto;
-      max-width:500px;
-      box-shadow:0 20px 40px rgba(0,0,0,.1);
-      animation:fadeIn 2s ease-out 2s both;
-    }
+    .how-i-see-you{background:rgba(255,255,255,.9);padding:40px;border-radius:25px;margin:40px auto;max-width:500px;box-shadow:0 20px 40px rgba(0,0,0,.1);animation:fadeIn 2s ease-out 2s both}
     .how-i-see-you h3{font-size:1.8rem;color:#d63031;margin-bottom:25px}
     .qualities{text-align:left;font-size:1.1rem;line-height:1.8;color:#2d3436}
     .qualities li{margin:15px 0;list-style:none;position:relative;padding-left:30px}
-    .qualities li:before{content:"\uD83D\uDC9B";position:absolute;left:0;animation:pulse 2s infinite}
+    .qualities li:before{content:"💛";position:absolute;left:0;animation:pulse 2s infinite}
     .photo-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;margin:50px 0}
-    .photo-card{
-      background:rgba(255,255,255,.95);
-      border-radius:20px;
-      padding:20px;
-      box-shadow:0 15px 35px rgba(0,0,0,.1);
-      transition:transform .3s ease,box-shadow .3s ease;
-      overflow:hidden;
-    }
+    .photo-card{background:rgba(255,255,255,.95);border-radius:20px;padding:20px;box-shadow:0 15px 35px rgba(0,0,0,.1);transition:transform .3s ease,box-shadow .3s ease;overflow:hidden}
     .photo-card:hover{transform:translateY(-10px);box-shadow:0 25px 45px rgba(0,0,0,.2)}
-    .real-photo{
-      width:100%;
-      height:250px;
-      border-radius:15px;
-      object-fit:cover;
-      border:3px solid #fdcb6e;
-      margin-bottom:15px;
-      transition:transform .3s ease;
-    }
+    .real-photo{width:100%;height:250px;border-radius:15px;object-fit:cover;border:3px solid #fdcb6e;margin-bottom:15px;transition:transform .3s ease}
     .real-photo:hover{transform:scale(1.05)}
     .photo-caption{font-size:1rem;color:#2d3436;font-style:italic;margin-top:10px}
-    .couple-photos{
-      background:linear-gradient(135deg,#ff9a9e,#fecfef,#fecfef);
-      padding:40px;
-      border-radius:25px;
-      margin:40px 0;
-    }
+    .couple-photos{background:linear-gradient(135deg,#ff9a9e,#fecfef,#fecfef);padding:40px;border-radius:25px;margin:40px 0}
     .couple-photos h3{font-size:2rem;color:#2d3436;margin-bottom:30px}
-    .message{
-      background:rgba(255,255,255,.95);
-      padding:40px;
-      border-radius:25px;
-      margin:40px auto;
-      max-width:600px;
-      box-shadow:0 20px 40px rgba(0,0,0,.1);
-      animation:fadeIn 2s ease-out 2.5s both;
-    }
+    .message{background:rgba(255,255,255,.95);padding:40px;border-radius:25px;margin:40px auto;max-width:600px;box-shadow:0 20px 40px rgba(0,0,0,.1);animation:fadeIn 2s ease-out 2.5s both}
     .message p{font-size:1.2rem;line-height:1.7;color:#2d3436;margin-bottom:20px;text-align:justify}
     .signature{font-style:italic;color:#d63031;margin-top:30px;font-size:1.3rem}
     .floating-petals{position:fixed;top:-10px;left:-10px;width:100vw;height:100vh;pointer-events:none;z-index:-1}
     .petal{position:absolute;font-size:1.5rem;animation:fall linear infinite}
     .heart-button{
-      background:linear-gradient(45deg,#e74c3c,#c0392b);
-      color:#fff;
-      border:none;
-      padding:15px 30px;
-      font-size:1.1rem;
-      border-radius:50px;
-      cursor:pointer;
-      margin:20px;
-      box-shadow:0 5px 15px rgba(231,76,60,.3);
-      transition:.3s ease;
-      animation:pulse 2s infinite;
+      background:linear-gradient(45deg,#e74c3c,#c0392b);color:#fff;border:none;padding:15px 30px;font-size:1.1rem;border-radius:50px;cursor:pointer;margin:20px;
+      box-shadow:0 5px 15px rgba(231,76,60,.3);transition:.3s ease;animation:pulse 2s infinite
     }
     .heart-button:hover{transform:scale(1.05);box-shadow:0 8px 25px rgba(231,76,60,.4)}
-    /* sorpresa overlay */
+
+    /* ====== SORPRESA: overlay + card animada ====== */
     .surprise-overlay{
-      position:fixed;
-      inset:0;
-      background:rgba(0,0,0,.35);
-      backdrop-filter:blur(6px);
-      display:none;
-      align-items:center;
-      justify-content:center;
-      padding:24px;
-      z-index:50;
-      animation:fadeOverlay .4s ease;
+      position:fixed;inset:0;background:rgba(0,0,0,.35);backdrop-filter:blur(6px);
+      display:none;align-items:center;justify-content:center;padding:24px;z-index:50;animation:fadeOverlay .4s ease
     }
     .surprise-overlay.show{display:flex}
     .surprise-card{
@@ -136,64 +60,40 @@
       border-radius:28px;
       padding:18px 18px 22px;
       background:linear-gradient(180deg,rgba(255,255,255,.85),rgba(255,255,255,.75));
-      box-shadow:0 30px 80px rgba(0,0,0,.25),inset 0 0 0 1px rgba(255,255,255,.6);
+      box-shadow:0 30px 80px rgba(0,0,0,.25), inset 0 0 0 1px rgba(255,255,255,.6);
       transform-origin:center;
-      animation:popIn .5s cubic-bezier(.2,.7,.2,1) forwards, softGlow 2.2s ease-in-out infinite alternate;
+      animation:popIn .5s cubic-bezier(.2,.7,.2,1) forwards, softGlow 2.2s ease-in-out infinite alternate
     }
     .surprise-media{
-      overflow:hidden;
-      border-radius:22px;
-      aspect-ratio:4/3;
-      background:linear-gradient(120deg,#fff,#f8f9fa);
+      overflow:hidden;border-radius:22px;aspect-ratio:4/3;
+      background:linear-gradient(120deg,#fff,#f8f9fa)
     }
     .surprise-media img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      display:block;
-      transform:scale(1.04);
-      animation:slowFloat 5s ease-in-out infinite alternate;
+      width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.04);
+      animation:slowFloat 5s ease-in-out infinite alternate
     }
     .surprise-content{padding:14px 6px 0}
     .surprise-title{
-      font-size:1.4rem;
-      letter-spacing:.2px;
+      font-size:1.4rem;letter-spacing:.2px;
       background:linear-gradient(45deg,#d63031,#e84393,#fdcb6e);
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
-      background-clip:text;
-      margin-bottom:6px;
-      text-align:center;
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+      margin-bottom:6px;text-align:center
     }
     .surprise-text{color:#2d3436;font-size:1.05rem;line-height:1.6;text-align:center}
     .close-btn{
-      position:absolute;
-      top:10px;
-      right:10px;
-      border:0;
-      border-radius:999px;
-      width:40px;
-      height:40px;
-      cursor:pointer;
-      font-size:20px;
-      background:rgba(255,255,255,.85);
-      box-shadow:0 8px 24px rgba(0,0,0,.15);
+      position:absolute;top:10px;right:10px;border:0;border-radius:999px;
+      width:40px;height:40px;cursor:pointer;font-size:20px;
+      background:rgba(255,255,255,.85);box-shadow:0 8px 24px rgba(0,0,0,.15)
     }
     .confetti{
-      position:fixed;
-      inset:0;
-      pointer-events:none;
-      overflow:hidden;
-      z-index:60;
+      position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:60
     }
     .confetti .spark{
-      position:absolute;
-      font-size:1.4rem;
-      opacity:0;
-      transform:translate(-50%,-50%) scale(.6);
-      animation:sparkUp .9s ease forwards;
+      position:absolute;font-size:1.4rem;opacity:0;transform:translate(-50%,-50%) scale(.6);
+      animation:sparkUp .9s ease forwards
     }
-    /* keyframes */
+
+    /* ====== Animaciones ====== */
     @keyframes fadeInDown{from{opacity:0;transform:translateY(-30px)}to{opacity:1;transform:translateY(0)}}
     @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
     @keyframes fadeIn{from{opacity:0}to{opacity:1}}
@@ -202,27 +102,29 @@
     @keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}
     @keyframes fadeOverlay{from{opacity:0}to{opacity:1}}
     @keyframes popIn{0%{opacity:0;transform:scale(.8) translateY(16px)}100%{opacity:1;transform:scale(1) translateY(0)}}
-    @keyframes softGlow{0%{box-shadow:0 30px 80px rgba(0,0,0,.25),0 0 0 0 rgba(253,203,110,0)}100%{box-shadow:0 30px 80px rgba(0,0,0,.25),0 0 30px 2px rgba(253,203,110,.35)}}
+    @keyframes softGlow{0%{box-shadow:0 30px 80px rgba(0,0,0,.25),0 0 0 0 rgba(253,203,110,.0)}100%{box-shadow:0 30px 80px rgba(0,0,0,.25),0 0 30px 2px rgba(253,203,110,.35)}}
     @keyframes slowFloat{from{transform:scale(1.04) translateY(0)}to{transform:scale(1.06) translateY(-6px)}}
     @keyframes sparkUp{0%{opacity:0;transform:translate(-50%,-20%) scale(.6)}40%{opacity:1}100%{opacity:0;transform:translate(-50%,-140%) scale(1)}}
+
     @media (max-width:480px){
-      .title{font-size:2rem}
-      .subtitle{font-size:1rem}
-      .message{margin:20px;padding:20px}
-      .how-i-see-you{padding:25px;margin:20px}
+      .title{font-size:2rem}.subtitle{font-size:1rem}
+      .message{margin:20px;padding:20px}.how-i-see-you{padding:25px;margin:20px}
       .photo-gallery{grid-template-columns:1fr}
     }
   </style>
 </head>
 <body>
   <div class="floating-petals" id="petals"></div>
+
   <div class="container">
     <h1 class="title">🌻 Flores Amarillas para Ti 🌻</h1>
     <p class="subtitle">Aunque estemos lejos, mi amor siempre está contigo</p>
     <p class="date-special">21 de Septiembre 2024 - Día de las Flores Amarillas</p>
+
     <div class="flowers-container">
       <span class="flower">🌻</span><span class="flower">🌼</span><span class="flower">🌻</span><span class="flower">🌼</span><span class="flower">🌻</span>
     </div>
+
     <div class="how-i-see-you">
       <h3>Cómo Te Veo Yo</h3>
       <ul class="qualities">
@@ -236,6 +138,7 @@
         <li>Eres mi persona favorita en todo el mundo</li>
       </ul>
     </div>
+
     <div class="section">
       <h2 class="section-title">Nuestros Momentos Juntitas</h2>
       <div class="photo-gallery">
@@ -253,6 +156,7 @@
         </div>
       </div>
     </div>
+
     <div class="couple-photos">
       <h3>📷 Nuestros Recuerdos Especiales</h3>
       <div class="photo-gallery">
@@ -270,14 +174,18 @@
         </div>
       </div>
     </div>
+
     <div class="message">
       <p>Bb, hoy es el día de las flores amarillas y aunque no puedo estar ahí contigo para darte un ramo real, quiero que sepas que cada día pienso en ti ,estes junto a mi o no.</p>
       <p>Eres la persona más especial que he conocido. Tu sonrisa ilumina mis días más grises</p>
       <p>Espero que este pequeño regalo digital te haga sonreír tanto como tú me haces sonreír a mí cada día. No puedo esperar al momento en que podamos estar juntos otra vez. 💛</p>
       <p class="signature">Con todo mi amor infinito,<br>[Renee Duhalde (piojito)]</p>
     </div>
+
     <button class="heart-button" aria-label="Mostrar sorpresa" onclick="showLove()">💝 Haz clic para una sorpresa</button>
   </div>
+
+  <!-- Overlay de la sorpresa -->
   <div class="surprise-overlay" id="surpriseOverlay" role="dialog" aria-modal="true" aria-labelledby="surpriseTitle">
     <div class="surprise-card" id="surpriseCard">
       <button class="close-btn" aria-label="Cerrar" onclick="hideLove()">✕</button>
@@ -291,9 +199,11 @@
     </div>
   </div>
   <div class="confetti" id="confetti"></div>
+
   <script>
+    // ===== pétalos permanentes =====
     function createPetal(){
-      const petals=['🌼','🌻','💛','✨','🦡','🌟'];
+      const petals=['🌼','🌻','💛','✨','🧡','🌟'];
       const petal=document.createElement('div');
       petal.className='petal';
       petal.textContent=petals[Math.floor(Math.random()*petals.length)];
@@ -304,6 +214,8 @@
       setTimeout(()=>petal.remove(),8000);
     }
     setInterval(createPetal,800);
+
+    // ===== sorpresa con foto + texto + confetti =====
     const messages=[
       "Tu risa es mi sonido favorito 🥰",
       "Gracias por ser mi lugar seguro ❤️",
@@ -313,46 +225,59 @@
       "Eres mi persona favorita en el mundo 🌈",
       "Te elijo hoy y siempre 🌻",
       "Eres la razón de mis sonrisas 💫"
+      
     ];
     const images=[
-      "fotos/sorpresa.jpeg",
-      "fotos/1 (17).jpeg",
-      "fotos/1 (18).jpeg",
-      "fotos/1 (23).jpeg",
-      "fotos/1 (14).jpeg"
+     
+      "fotos/sorpresa.jpeg"
     ];
+
     function showLove(){
+      // elige mensaje e imagen
       const msg=messages[Math.floor(Math.random()*messages.length)];
       const imgSrc=images[Math.floor(Math.random()*images.length)];
+
+      // setea contenido
       const overlay=document.getElementById('surpriseOverlay');
       const img=document.getElementById('surpriseImg');
       const text=document.getElementById('surpriseText');
       img.src=imgSrc;
       img.alt="Nuestro recuerdo";
       text.textContent=msg;
+
+      // muestra overlay
       overlay.classList.add('show');
+
+      // pequeña explosión de confetti
       burstConfetti();
-      overlay.addEventListener('click',function(e){
-        if(e.target===overlay){hideLove();}
-      },{once:true});
-      document.addEventListener('keydown',escCloseOnce,{once:true});
+
+      // al hacer click fuera de la tarjeta, cerrar
+      overlay.addEventListener('click', (e)=>{
+        if(e.target===overlay) hideLove();
+      }, { once:true });
+
+      // cerrar con Esc
+      document.addEventListener('keydown', escCloseOnce, { once:true });
     }
+
     function hideLove(){
       const overlay=document.getElementById('surpriseOverlay');
       overlay.classList.remove('show');
     }
+
     function escCloseOnce(e){
-      if(e.key==='Escape'){hideLove();}
+      if(e.key==='Escape') hideLove();
     }
+
     function burstConfetti(){
       const confetti=document.getElementById('confetti');
-      const chars=['💛','✨','🌟','🌻','🦡','💫','🌼','💋'];
+      const chars=['💛','✨','🌟','🌻','🧡','💫','🌼','💕'];
       for(let i=0;i<26;i++){
         const s=document.createElement('div');
         s.className='spark';
         s.textContent=chars[Math.floor(Math.random()*chars.length)];
-        const startX=50+(Math.random()*20-10);
-        const startY=60+(Math.random()*10-5);
+        const startX=50+ (Math.random()*20-10); // alrededor del centro
+        const startY=60+ (Math.random()*10-5);
         s.style.left=startX+'%';
         s.style.top=startY+'%';
         s.style.animationDelay=(Math.random()*0.1)+'s';
@@ -361,11 +286,15 @@
         setTimeout(()=>s.remove(),900);
       }
     }
+
+    // ===== entrada suave de la página =====
     window.addEventListener('load',function(){
       document.body.style.opacity='0';
       document.body.style.transition='opacity 1s ease-in';
       setTimeout(()=>{document.body.style.opacity='1'},100);
     });
+
+    // ===== pétalos iniciales =====
     setTimeout(()=>{for(let i=0;i<5;i++){setTimeout(createPetal,i*1000)}},2000);
   </script>
 </body>
